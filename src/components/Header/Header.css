@@ -1,0 +1,166 @@
+.headerContainer {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+/* Logo */
+
+.navLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #1c276c;
+  font-weight: 700;
+}
+
+#logo {
+  font-size: 25px;
+  margin-right: 3px;
+  margin-left: 20px;
+  color: #1c276c;
+}
+/* Links */
+
+.navLinkAndSearch {
+  display: flex;
+}
+
+.navLinkAndSearch ul {
+  display: flex;
+  list-style: none;
+}
+.navLinkAndSearch ul li {
+  padding: 0px 8px;
+  margin-right: 12px;
+  font-size: 18px;
+}
+.navLinkAndSearch ul li a {
+  color: #1c276c;
+}
+
+.active {
+  color: #1c276c;
+  font-weight: 600;
+  font-size: 19px;
+  border-bottom: 2px solid #1c276c;
+}
+
+/* Search button */
+.search {
+  margin-right: 35px;
+}
+
+.search input {
+  margin-right: 8px;
+  padding: 6px;
+  width: 300px;
+  border: 2px solid #1c276c;
+  border-radius: 8px;
+  outline: none;
+}
+
+.search button {
+  padding: 6px;
+  width: 70px;
+  background-color: #1c276c;
+  color: white;
+  border-radius: 12px;
+  outline: none;
+}
+
+.search button:hover {
+  background-color: #434d97;
+}
+
+/* Menu icon */
+#menu {
+  background-color: white;
+  color: #1c276c;
+  margin-right: 15px;
+  display: none;
+}
+
+/* Responsive Code Here */
+@media (max-width: 975px) {
+  .navLinkAndSearch {
+    display: flex;
+  }
+  .navLogo {
+    font-size: 16px;
+    /* so that it is asign in same line as of the links in horizontal direction */
+    margin-top: -15px;
+  }
+  #menu {
+    display: none;
+  }
+  .navLinkAndSearch ul li {
+    font-size: 15px;
+  }
+  .search {
+    margin-right: 15px;
+  }
+  .search input {
+    width: auto;
+  }
+  .active {
+    font-size: 17px;
+  }
+  .navLinksJavaScript {
+    display: none;
+  }
+}
+
+@media (max-width: 738px) {
+  .navLinkAndSearch {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+    background-color: white;
+    color: #1c276c;
+    margin-right: 15px;
+  }
+
+  .search {
+    margin-right: 15px;
+    display: flex;
+  }
+  .search input {
+    width: auto;
+  }
+  .active {
+    font-size: 20px;
+  }
+}
+
+/* utility classes */
+
+/* Classes added by the javascript */
+.navLinksJavaScript {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  padding: 27px 15px;
+  background: #ffffffe8;
+  width: 100%;
+  margin-bottom: 81px;
+  flex-wrap: nowrap;
+  overflow: auto;
+  z-index: 5;
+}
+
+.navLinksJavaScript ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  line-height: 2;
+}

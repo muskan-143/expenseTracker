@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  background-color: white;
+  width: 70%;
+  height: auto;
+  /* box-shadow: 2px 2px 5px #1c276c; */
+  box-shadow: -2px 0px 10px #1c276c;
+  border-radius: 12px;
+}
+
+.container h1 {
+  padding: 15px;
+  color: #1c276c;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container form input {
+  margin-top: 12px;
+  border: 2px solid #1c276c;
+  padding: 12px;
+  width: 40%;
+  outline: none;
+  border-radius: 12px;
+}
+
+.container form select {
+  width: 43%;
+  margin-top: 15px;
+  padding: 12px;
+  border: 2px solid #1c276c;
+  border-radius: 12px;
+}
+
+.container form button {
+  width: 20%;
+  margin: auto;
+  padding: 12px;
+  border: none;
+  margin-top: 15px;
+  background-color: #1c276c;
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.container form button:hover {
+  background-color: #313d89;
+}
+
+@media (max-width: 781px) {
+  .container form input {
+    margin-top: 12px;
+    border: 2px solid #1c276c;
+    padding: 12px;
+    width: 70%;
+    outline: none;
+    border-radius: 12px;
+  }
+  .container form select {
+    width: 75%;
+  }
+}
+@media (max-width: 401px) {
+  .container {
+    width: 100%;
+  }
+  .container h1 {
+    padding: 10px;
+    color: #1c276c;
+    font-weight: 300;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+  .container form button {
+    font-size: 10px;
+    padding: 5px 3px;
+  }
+}
